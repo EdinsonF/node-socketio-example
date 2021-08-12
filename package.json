@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon  src/index.js --exec babel-node", 
+    "start": "nodemon  src/index.js --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,5 +16,9 @@
     "@babel/node": "^7.14.9",
     "@babel/preset-env": "^7.15.0",
     "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.3"
   }
 }

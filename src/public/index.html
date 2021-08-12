@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./main.css">
+  <title>Node - Socket</title>
+</head>
+<body>
+
+<div class="main">
+  <div class="App"> 
+    <div class="container">
+      <div class="header">
+        <h2>Form HandleChange</h2>
+        <span class="counter">Render</span>
+      </div>
+
+      <form  class="formulario">
+          <div class="campo">
+            <label>Name:</label>
+            <input type="text" name="nombre"  onChange={handleInput}/>
+          </div>
+
+          <div class="campo">
+            <label>Last Name:</label>
+            <input type="text" name="apellido"  onChange={handleInput}/>
+          </div>
+
+        <input type="submit" value="Send" />
+      </form>
+   </div> 
+  </div>
+  <div class="notas">
+    <div class="">
+      <h1>post</h1>
+    </div>
+  </div>
+</div>
+  
+  
+
+</body>
+  <script src="/socket.io/socket.io.min.js"></script>
+  <script src="./main.js"></script>
+</html>

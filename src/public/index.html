@@ -5,37 +5,57 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./card.css">
+
   <title>Node - Socket</title>
 </head>
 <body>
 
 <div class="main">
+
+  <div class="nav-bar">
+    <h1>Nodejs - Socket.io</h1>
+    <span class="counter">🔔 0</span>
+
+  </div>
   <div class="App"> 
     <div class="container">
-      <div class="header">
-        <h2>Form HandleChange</h2>
-        <span class="counter">Render</span>
-      </div>
-
-      <form  class="formulario">
+      <form  class="formulario" >
           <div class="campo">
-            <label>Name:</label>
-            <input type="text" name="nombre"  onChange={handleInput}/>
+            <label>User:</label>
+            <input type="text" name="user" value="" onkeyup="handleInput(this)"/>
           </div>
 
           <div class="campo">
-            <label>Last Name:</label>
-            <input type="text" name="apellido"  onChange={handleInput}/>
+            <label>Post:</label>
+            <textarea name="post" onkeyup="handleInput(this)"></textarea>
           </div>
 
-        <input type="submit" value="Send" />
+        <button type="button" name="send" onclick="sendForm()"> Send</button>
       </form>
    </div> 
   </div>
   <div class="notas">
-    <div class="">
-      <h1>post</h1>
-    </div>
+    
+      <h1>Posts</h1>
+      
+
+        <!-- empieza -->
+
+        <div class="card">
+          <div class="card-header">
+            <div class="user">User</div>
+            <h4 class="card-title">TITULO</h4>
+          </div>
+          <div class="card-body">
+            
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <!-- termina -->
+
+      
+    
   </div>
 </div>
   
@@ -43,5 +63,8 @@
 
 </body>
   <script src="/socket.io/socket.io.min.js"></script>
+  <script src="./UI.js"></script>
+
   <script src="./main.js"></script>
+
 </html>

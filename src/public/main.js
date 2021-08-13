@@ -1,5 +1,31 @@
+
+let datos = {
+  user: "",
+  post: ""
+}
+
+function handleInput(e){
+  datos={
+    ...datos,
+    [e.name]: e.value
+  }
+}
+ 
+
 const sockClient = io();
 
-sockClient.on('ping', () => {
-  console.log("escuchando emmit del server");
+const sendForm = () => {
+  sockClient.emit('client:newPost', {
+    datos
 })
+}
+
+sockClient.on('server:newPost', newPost)
+
+
+sockClient.on('server:loadPost', loadPosts)
+
+
+
+
+

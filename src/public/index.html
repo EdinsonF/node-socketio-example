@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./main.css">
   <link rel="stylesheet" href="./card.css">
-
+  
   <title>Node - Socket</title>
 </head>
 <body>
@@ -22,18 +22,21 @@
     <div class="container">
       <form  class="formulario" >
           <div class="campo">
-            <label>User:</label>
+            <label><h4>User:</h4></label>
             <input type="text" name="user" value="" onkeyup="handleInput(this)"/>
           </div>
 
           <div class="campo">
-            <label>Post:</label>
+            <label><h4>Post:</h4></label>
             <textarea name="post" onkeyup="handleInput(this)"></textarea>
           </div>
 
         <button type="button" name="send" onclick="sendForm()"> Send</button>
       </form>
    </div> 
+  </div>
+  <div class="addNew">
+    <button id="btnEfect"><i class="fa fa-plus" aria-hidden="true"></i></button>
   </div>
   <div class="notas">
     
@@ -42,16 +45,7 @@
 
         <!-- empieza -->
 
-        <div class="card">
-          <div class="card-header">
-            <div class="user">User</div>
-            <h4 class="card-title">TITULO</h4>
-          </div>
-          <div class="card-body">
-            
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
+        
         <!-- termina -->
 
       
@@ -66,5 +60,6 @@
   <script src="./UI.js"></script>
 
   <script src="./main.js"></script>
+  <script src="https://use.fontawesome.com/d5ce1fabd0.js"></script>
 
 </html>

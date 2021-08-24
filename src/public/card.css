@@ -87,8 +87,7 @@
     background: linear-gradient(91deg, #336d7a 0%, #2a535c 100%);
     box-shadow: 14px 19px 34px 0px #004552;
     flex-direction: column;
-    
-    width: 100%;
+    min-width: 200px;
     height: auto;
     border-radius: 20px;
     margin-top: 20px;

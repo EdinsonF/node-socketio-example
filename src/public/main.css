@@ -283,7 +283,7 @@ h4{
   .notas {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     grid-row: 3 / 4;
     grid-column: 1 / 4;
   
@@ -291,6 +291,7 @@ h4{
     text-align: center;
     padding: 30px 100px 30px 100px ;
     height: auto;
+    width: auto;
     border-radius: 15px;
   
     

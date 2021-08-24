@@ -10,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new WebSocketServer(server);
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public/index.html'));
  
 io.on('connection', (socket) => {
   console.log("new connection:", socket.id);

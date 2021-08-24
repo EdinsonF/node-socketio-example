@@ -23,7 +23,7 @@ function handleInput(e){
 }
  
  
-const sockClient = io();
+const sockClient = io('https://git.heroku.com/app-node-soket.git');
 
 const sendForm = () => {
   sockClient.emit('client:newPost', {

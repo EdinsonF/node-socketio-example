@@ -12,6 +12,7 @@ const addNewBtn = document.querySelector('.addNew');
 
 let datos = {
   user: "",
+  title: "",
   post: ""
 }
 
@@ -20,12 +21,24 @@ function handleInput(e){
     ...datos,
     [e.name]: e.value
   }
+  console.log(datos);
 }
  
  
 const sockClient = io();
 
 const sendForm = () => {
+
+  if(datos.user === "" || datos.title === "" || datos.post ===""){
+    console.log("campos vacios");
+    let mjs = document.querySelector('.mjs');
+    mjs.style.display = "flex";
+    setTimeout(() => {
+      mjs.style.display = "none";
+    }, 2000);
+    return;
+  }
+
   sockClient.emit('client:newPost', {
     datos
 })

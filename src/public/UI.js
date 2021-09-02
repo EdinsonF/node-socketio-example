@@ -10,7 +10,7 @@ const uiRender = (post) => {
   
       <div class="card-header">
         <h4 class="user">${post.user}</h4>
-        <h4 class="card-title">TITULO</h4>
+        <h4 class="card-title">Titulo: ${post.title}</h4>
       </div>
       <div class="card-body">
         

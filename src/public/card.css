@@ -10,21 +10,23 @@
   margin-bottom: 20px;
   animation: animateCardPost 2s ease 0s 1 normal forwards;
   
+  
 }
 
 .card-header{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 10px;
 }
 
 .card-header > .user {
   margin-left:30px;
-  padding: 20px 0px;
 }
 
 .card-header > .card-title {
   margin-right:30px;
-  padding: 20px 0px;
+  margin-left: 30px;
 }
 
 .card-body {
@@ -32,6 +34,9 @@
   text-align: justify;
   Word-wrap: break-Word;
 }
+
+
+
 
 
 

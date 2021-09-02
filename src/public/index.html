@@ -4,8 +4,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  
   <link rel="stylesheet" href="./main.css">
   <link rel="stylesheet" href="./card.css">
+
+  
   
   <title>Node - Socket</title>
 </head>
@@ -19,11 +23,16 @@
 
   </div>
   <div class="App"> 
-    <div class="container">
+    <div class="container"><div class="mjs"><span>Campos vacios!</span></div>
       <form  class="formulario" >
           <div class="campo">
             <label><h4>User:</h4></label>
-            <input type="text" name="user" value="" onkeyup="handleInput(this)"/>
+            <input type="text" name="user" value="" onkeyup="handleInput(this)" autocomplete="off" />
+          </div>
+
+          <div class="campo">
+            <label><h4>Title:</h4></label>
+            <input type="text" name="title" value="" onkeyup="handleInput(this)" autocomplete="off"/>
           </div>
 
           <div class="campo">
